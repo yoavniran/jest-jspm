@@ -1,8 +1,8 @@
 REPLACE BADGES !!!!!
 
-[![Coverage Status](https://coveralls.io/repos/github/yoavniran/gulp-jest-jspm/badge.svg?branch=master)](https://coveralls.io/github/yoavniran/gulp-jest-jspm?branch=master)
-[![npm Version](https://img.shields.io/npm/v/gulp-jest-jspm.svg)](https://www.npmjs.com/package/gulp-jest-jspm) 
-[![CircleCI](https://circleci.com/gh/yoavniran/gulp-jest-jspm/tree/master.svg?style=svg)](https://circleci.com/gh/yoavniran/gulp-jest-jspm/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/yoavniran/jest-jspm/badge.svg?branch=master)](https://coveralls.io/github/yoavniran/jest-jspm?branch=master)
+[![npm Version](https://img.shields.io/npm/v/jest-jspm.svg)](https://www.npmjs.com/package/jest-jspm) 
+[![CircleCI]([![CircleCI](https://circleci.com/gh/yoavniran/jest-jspm.svg?style=svg)](https://circleci.com/gh/yoavniran/jest-jspm))
 
 # jest-jspm
 

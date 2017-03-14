@@ -2,13 +2,8 @@ describe("plugin tests", () => {
 	"use strict";
 
 	let mockTestResultType = "";
-	let mockThroughObjResult = {"who": "stream"};
 
 	beforeAll(() => {
-
-		// jest.mock("through2", () => ({
-		// 	obj: jest.fn(() => mockThroughObjResult)
-		// }));
 
 		const mockTestResults = {
 			"notFound": false,
@@ -60,7 +55,7 @@ describe("plugin tests", () => {
 
 		const testBasePath = "./bla",
 			testOptions = {foo: "bar"},
-			result = require("../src/index").makeJestConfig(testBasePath, testOptions);
+			result = require("../src/index").default(testBasePath, testOptions);
 
 		const mockMappingReader = require("../src/jspmMappingReader");
 
@@ -108,7 +103,7 @@ describe("plugin tests", () => {
 				jspmPackages: "jspm_packages-test",
 				nodeModules: "node_modules-test",
 			},
-			result = require("../src/index").makeJestConfig(testBasePath, testOptions);
+			result = require("../src/index").default(testBasePath, testOptions);
 
 		const mockMappingReader = require("../src/jspmMappingReader");
 
@@ -146,7 +141,7 @@ describe("plugin tests", () => {
 				jspmPackages: "jspm_packages-test",
 				nodeModules: "node_modules-test",
 			},
-			result = require("../src/index").makeJestConfig(testBasePath, testOptions);
+			result = require("../src/index").default(testBasePath, testOptions);
 
 		expect(utils.getModuleFromAbsBasePath).toHaveBeenCalledWith(testBasePath, jestConfigPath);
 
@@ -180,7 +175,7 @@ describe("plugin tests", () => {
 				jspmPackages: "jspm_packages-test",
 				nodeModules: "node_modules-test",
 			},
-			result = require("../src/index").makeJestConfig(testBasePath, testOptions);
+			result = require("../src/index").default(testBasePath, testOptions);
 
 		expect(result).toEqual({
 			debug: true,
@@ -209,7 +204,7 @@ describe("plugin tests", () => {
 				jspmPackages: "jspm_packages-test",
 				nodeModules: "node_modules-test",
 			},
-			result = require("../src/index").makeJestConfig(testBasePath, testOptions);
+			result = require("../src/index").default(testBasePath, testOptions);
 
 		expect(result).toEqual({
 			debug: true,
@@ -231,7 +226,7 @@ describe("plugin tests", () => {
 		mockTestResultType  = "empty";
 
 		const testBasePath = "./bla",
-			result = require("../src/index").makeJestConfig(testBasePath, {});
+			result = require("../src/index").default(testBasePath, {});
 
 		expect(result).toEqual({
 			moduleNameMapper: {
@@ -247,7 +242,7 @@ describe("plugin tests", () => {
 		mockTestResultType  = "notFound";
 
 		const testBasePath = "./bla",
-			result = require("../src/index").makeJestConfig(testBasePath, {displayWarnings: true});
+			result = require("../src/index").default(testBasePath, {displayWarnings: true});
 
 		expect(require("../src/utils").showWarning).toHaveBeenCalledTimes(1);
 

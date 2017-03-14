@@ -1,0 +1,6 @@
+machine:
+  node:
+    version: 6.1.0
+
+#npm 1,2,3,4 install commands runs npm prepublish command!!! wtf!??!? :( - (https://github.com/npm/npm/issues/3059)  - which runs tests. should change in npm 5
+
