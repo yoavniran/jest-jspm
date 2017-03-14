@@ -1,0 +1,9 @@
+gulpfile.js
+.eslintrc
+.babelrc
+.gitignore
+node_modules/
+test/
+.coveralls.yml
+.idea/
+
