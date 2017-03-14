@@ -3,10 +3,6 @@ describe("jspmConfigLoader tests", () => {
 
     const loaderResult = {foo: "bar"};
 
-    beforeAll(() => {
-
-    });
-
     beforeEach(() => {
         jest.mock("../src/utils", () => ({
             getModuleFromAbsBasePath: jest.fn()

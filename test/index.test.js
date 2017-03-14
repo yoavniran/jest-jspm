@@ -1,4 +1,4 @@
-describe("plugin tests", () => {
+describe("library tests", () => {
 	"use strict";
 
 	let mockTestResultType = "";

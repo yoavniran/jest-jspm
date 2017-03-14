@@ -2,12 +2,13 @@
   "name": "jest-jspm",
   "version": "0.1.0",
   "description": "converts jspm aliasing config into jest mapping config",
-  "main": "src/index.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "prepublish": "gulp"
   },
   "repository": {
     "type": "git",
