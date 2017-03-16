@@ -1,6 +1,6 @@
 {
   "name": "jest-jspm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "converts jspm aliasing config into jest mapping config",
   "main": "index.js",
   "directories": {
