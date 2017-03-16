@@ -1,6 +1,6 @@
 {
   "name": "jest-jspm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "converts jspm aliasing config into jest mapping config",
   "main": "index.js",
   "directories": {
@@ -38,5 +38,6 @@
     "gulp-eslint": "^3.0.1",
     "gulp-jest": "^1.0.0",
     "jest-cli": "^19.0.2"
-  }
+  },
+  "dependencies": {}
 }
