@@ -8,6 +8,8 @@ A Helper to generate [Jest](https://facebook.github.io/jest/) configuration for 
  Since System JS applies its own logic for how to resolve dependencies Jest cannot locate them while running.
  This library helps you test your app with Jest by generating the correct mappings configuration Jest understands.
  
+ > Gulp users see: [gulp-jest-jspm](https://www.npmjs.com/package/gulp-jest-jspm)
+ 
 ## Usage
 
 Install: 
@@ -47,10 +49,3 @@ The options accepted by the make method are:
  > **nodeModules** - location of node modules dir (default: "./node_modules")
  
  > **displayWarnings** - whether the plugin will output warnings to console (default: false)
-
- 
-This library is used by the following packages:
-
-[gulp-jest-jspm](https://www.npmjs.com/package/gulp-jest-jspm)
-
-[grunt-jest-jspm](https://www.npmjs.com/package/grunt-jest-jspm)
