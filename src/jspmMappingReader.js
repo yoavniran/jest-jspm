@@ -3,7 +3,7 @@ import {isString} from './utils'
 import loadConfig from './jspmConfigLoader'
 
 const getMapValue = (value) =>
-  ((!~value.indexOf('@') ? '<rootDir>/' : '') + value.replace(/[\d\w\-]*:/, ''))
+  ((!~value.indexOf('@') ? '<rootDir>/' : '') + value.replace(/[\d\w-]*:/, ''))
 
 const processMapItem = (map, res, key) => {
   if (isString(map[key])) {
@@ -11,7 +11,7 @@ const processMapItem = (map, res, key) => {
 
     if (!res[newKey]) { // avoid duplicates
       res[newKey] = getMapValue(map[key]) // set the exact match
-      res[`^${key}\/(.*)`] = res[newKey] + '/$1'  // set a match for a dir
+      res[`^${key}/(.*)`] = res[newKey] + '/$1'  // set a match for a dir
     }
   } else {
     res = iterateSjsConfigMap(map[key], res) // continue iterating
