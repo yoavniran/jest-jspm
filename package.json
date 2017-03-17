@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "gulp test",
+    "test": "standard --fix | snazzy && gulp test",
     "prepublish": "gulp"
   },
   "repository": {
@@ -35,9 +35,13 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-coveralls": "^0.1.4",
-    "gulp-eslint": "^3.0.1",
     "gulp-jest": "^1.0.0",
-    "jest-cli": "^19.0.2"
+    "jest-cli": "^19.0.2",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "standard": {
+    "parser": "babel-eslint"
+  }
 }
