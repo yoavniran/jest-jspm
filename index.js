@@ -1,2 +1,2 @@
-const lib = require("./lib/index");
-module.exports = lib.default;
+const lib = require('./lib/index')
+module.exports = lib.default
