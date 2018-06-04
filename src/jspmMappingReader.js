@@ -2,8 +2,7 @@
 import {isString} from "./utils";
 import loadConfig from "./jspmConfigLoader";
 
-const getMapValue = (value) =>
-	((!~value.indexOf("@") ? "<rootDir>/" : "") + value.replace(/[\d\w\-]*:/, ""));
+const getMapValue = (value) => value.replace(/[\d\w\-]*:/, "");
 
 const processMapItem = (map, res, key) => {
 	if (isString(map[key])) {
